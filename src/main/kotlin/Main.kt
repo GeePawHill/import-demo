@@ -6,6 +6,10 @@ import kotlinx.serialization.modules.SerializersModule
 /*
 import kotlinx.serialization.modules.polymorphic
 import kotlinx.serialization.modules.subclass
+
+The issue happens elsewhere. In Compose-JVM, for instance, with LazyColumn.items, which has
+an overloaded extension method taking only a mutableStateListOf(), which intellij will not find
+as you live-type it.
  */
 
 interface Super { }
